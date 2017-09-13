@@ -10,9 +10,9 @@ docker pull maedoc/tvb-hpc
 
 and run the tests
 ```
-docker run --rm -it -v ./:/root/hpc python -m unittest tvb_hpc.tests
+docker run --rm -it -v $PWD:/root/hpc maedoc/tvb-hpc python -m unittest tvb_hpc.tests
 ```
-(on Windows, replace `./` by `%CD%`.)
+(on Windows, replace `$PWD` by `%CD%`.)
 
 Get hacking with the [`examples`](examples) or [tests](tvb_hpc/tests.py).
 
